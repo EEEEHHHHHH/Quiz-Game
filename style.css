@@ -1,0 +1,17 @@
+body {
+    background-color: lightyellow;
+    color: darkcyan;
+}
+
+h1{
+    color: teal;
+}
+button{
+    color: crimson;
+}
+p{
+    color: black;
+} 
+ input{
+    color: darkgreen;
+ }

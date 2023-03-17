@@ -1,14 +1,16 @@
-// ░██████╗░██╗░░░██╗██╗███████╗░░░░░░░██████╗░░█████╗░███╗░░░███╗███████╗
-// ██╔═══██╗██║░░░██║██║╚════██║░░░░░░██╔════╝░██╔══██╗████╗░████║██╔════╝
-// ██║██╗██║██║░░░██║██║░░███╔═╝█████╗██║░░██╗░███████║██╔████╔██║█████╗░░
-// ╚██████╔╝██║░░░██║██║██╔══╝░░╚════╝██║░░╚██╗██╔══██║██║╚██╔╝██║██╔══╝░░
-// ░╚═██╔═╝░╚██████╔╝██║███████╗░░░░░░╚██████╔╝██║░░██║██║░╚═╝░██║███████╗
-// ░░░╚═╝░░░░╚═════╝░╚═╝╚══════╝░░░░░░░╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝
-//
-// Daniel Moshi, Noah Månsson Persson, Ramin Samadi
-// https://github.com/EEEEHHHHHH/Quiz-Game/blob/main/script.js
-// NAME: script.js
-// DESC: JavaScript code that displays if the result of the selected radios are correct or wrong.
+/*
+░██████╗░██╗░░░██╗██╗███████╗░░░░░░░██████╗░░█████╗░███╗░░░███╗███████╗
+██╔═══██╗██║░░░██║██║╚════██║░░░░░░██╔════╝░██╔══██╗████╗░████║██╔════╝
+██║██╗██║██║░░░██║██║░░███╔═╝█████╗██║░░██╗░███████║██╔████╔██║█████╗░░
+╚██████╔╝██║░░░██║██║██╔══╝░░╚════╝██║░░╚██╗██╔══██║██║╚██╔╝██║██╔══╝░░
+░╚═██╔═╝░╚██████╔╝██║███████╗░░░░░░╚██████╔╝██║░░██║██║░╚═╝░██║███████╗
+░░░╚═╝░░░░╚═════╝░╚═╝╚══════╝░░░░░░░╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝
+
+Daniel Moshi, Noah Månsson Persson, Ramin Samadi
+https://github.com/EEEEHHHHHH/Quiz-Game/blob/main/script.js
+NAME: script.js
+DESC: JavaScript code that displays if the result of the selected radios are correct or wrong.
+*/
 
 function getResult() {
   const radios = document.querySelectorAll('input[type="radio"]');

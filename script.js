@@ -6,7 +6,7 @@
 // ░░░╚═╝░░░░╚═════╝░╚═╝╚══════╝░░░░░░░╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝
 //
 // Daniel Moshi, Noah Månsson Persson, Ramin Samadi
-// https://github.com/EEEEHHHHHH/Quiz-Game
+// https://github.com/EEEEHHHHHH/Quiz-Game/blob/main/script.js
 // NAME: script.js
 // DESC: JavaScript code that displays if the result of the selected radios are correct or wrong.
 

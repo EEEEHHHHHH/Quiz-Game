@@ -1,17 +1,33 @@
+/* General Styles */
 body {
-    background-color: lightyellow;
-    color: darkcyan;
+  background-color: lightyellow;
 }
 
+/* Heading Styles */
 h1{
-    color: teal;
+  color: teal;
 }
+
+/* Button Styles */
 button{
-    color: crimson;
+  color: crimson;
 }
+
+/* Paragraph Styles */
 p{
-    color: black;
-} 
- input{
-    color: darkgreen;
- }
+  color: black;
+}
+
+/* Input Styles */
+input{
+  color: darkgreen;
+}
+
+/* Feedback Styles */
+.correct {
+  color: green;
+}
+
+.wrong {
+  color: red;
+}

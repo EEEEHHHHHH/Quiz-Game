@@ -1,10 +1,46 @@
-function getResult() {
-    let correctAnswers = 0;    
+// ░██████╗░██╗░░░██╗██╗███████╗░░░░░░░██████╗░░█████╗░███╗░░░███╗███████╗
+// ██╔═══██╗██║░░░██║██║╚════██║░░░░░░██╔════╝░██╔══██╗████╗░████║██╔════╝
+// ██║██╗██║██║░░░██║██║░░███╔═╝█████╗██║░░██╗░███████║██╔████╔██║█████╗░░
+// ╚██████╔╝██║░░░██║██║██╔══╝░░╚════╝██║░░╚██╗██╔══██║██║╚██╔╝██║██╔══╝░░
+// ░╚═██╔═╝░╚██████╔╝██║███████╗░░░░░░╚██████╔╝██║░░██║██║░╚═╝░██║███████╗
+// ░░░╚═╝░░░░╚═════╝░╚═╝╚══════╝░░░░░░░╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝
+//
+// Daniel Moshi, Noah Månsson Persson, Ramin Samadi
+// https://github.com/EEEEHHHHHH/Quiz-Game
+// NAME: script.js
+// DESC: JavaScript code that displays if the result of the selected radios are correct or wrong.
 
-    for (let i = 0; i < radios.length; i++) {
-        if (document.querySelectorAll('input[type="radio"].correct')[i].checked && document.querySelector('input[type="radio"].correct').checked) {
-            correctAnswers++;
-        };
-    };
-    document.getElementById("result").textContent = correctAnswers;
-};
+function getResult() {
+  const radios = document.querySelectorAll('input[type="radio"]');
+  const result = document.getElementById("result");
+  let correctAnswers = 0;
+
+  radios.forEach((radio) => {
+    const radioIsCorrect = radio.classList.contains("correct");
+    const radioIsSelected = radio.checked;
+    const radioStyle = radio.parentNode.classList;
+    radioStyle.remove("wrong");
+    radioStyle.remove("correct");
+
+    if (radioIsSelected && radioIsCorrect) {
+      correctAnswers++;
+      radioStyle.add("correct");
+    } else if (radioIsSelected && !radioIsCorrect) {
+      radioStyle.add("wrong");
+    }
+  });
+
+  result.textContent = `Result: ${correctAnswers}/${radios.length/4}`;
+}
+
+function previewAnswers() {
+  const correctRadios = document.querySelectorAll('input[type="radio"].correct');
+
+  correctRadios.forEach((radio) => {
+    const radioStyle = radio.parentNode.classList;
+    radio.checked = true;
+    radioStyle.add("correct");
+  });
+
+  getResult();
+}

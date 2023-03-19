@@ -39,9 +39,7 @@ function previewAnswers() {
   const correctRadios = document.querySelectorAll('input[type="radio"].correct');
 
   correctRadios.forEach((radio) => {
-    const radioStyle = radio.parentNode.classList;
     radio.checked = true;
-    radioStyle.add("correct");
   });
 
   getResult();
